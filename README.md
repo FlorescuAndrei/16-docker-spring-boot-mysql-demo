@@ -22,7 +22,7 @@ Steps:
      - create a new repo on docker hub: 
        - florescua/16-customer-demo-app
      - tag the image : 
-       - docker tag 14-thymeleaf-kube florescua/16-customer-demo-app:0.1
+       - tag 16-customer-demo-app:0.1 florescua/16-customer-demo-app:0.1
      - push the image: 
        - docker push florescua/16-customer-demo-app:0.1  
      
