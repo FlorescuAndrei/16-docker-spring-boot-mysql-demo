@@ -62,4 +62,6 @@ Notes
 Error building the .jar file:
   - After modify application.properti and change localhost to mysqlc1, the app will not run on local environment.
 Will generate build error and no .jar file will be created. To build it, delete all target file and rebuild the app 
-Eclipse project –run as- maven build – goals = package; **check skip test**
+Eclipse project –run as- maven build – goals = package; **check skip test**  
+  
+[BACK TO START PAGE](https://github.com/FlorescuAndrei/Start.git)
