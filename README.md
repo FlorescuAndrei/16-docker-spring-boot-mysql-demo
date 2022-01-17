@@ -28,7 +28,7 @@ Steps:
      
  3. Pull back the image from docker hub and run the app   
      - docker-compose -f 16customer-demo-app.yaml up 
-     - docker compose use.yaml file and will:
+     - docker compose use .yaml file and will:
        - pull app image and create a container for it
        - pull database image set environmetn and create another container
        - set the run order of container with depends-on and helthcheck
