@@ -31,7 +31,7 @@ Steps:
      - docker compose use .yaml file and will:
        - pull app image and create a container for it
        - pull database image set environmetn and create another container
-       - set the run order of container with depends-on and helthcheck
+       - **set the run order** of container with depends-on and helthcheck
        - crate a network and run the containers.  
     
  4. View and edit customer list on http://localhost:8080/. 
@@ -48,7 +48,7 @@ Steps:
     - push new image to docker hub: 
       - docker push florescua/16-mysql-demo:0.1
       
-2. create a networ to run the app, no docker compose and .yaml file:  
+2. create a network to run the app, no docker compose and .yaml file:  
   - docker network create net1
   - docker run --name mysqlc1 -p 3306:3306  -d  florescua/16-mysql-demo:0.1
   - docker network connect net1 mysqlc1
