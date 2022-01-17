@@ -5,7 +5,7 @@ Upload the image to docker hub.
 Use a docker compose .yaml file that:  
   - pull the image in a local container,
   - pull a mysql image in a local container,
-  - create a network and run the containers.
+  - create a network and run the containers.  
 After that, app is running and can be acces on http://localhost:8080/  
 
 
@@ -17,10 +17,14 @@ Steps:
         - docker build -t 16-customer-demo-app:0.1 .
         
   2. Push image to docker hub
-     - login : docker login
-     - create a new repo on docker hub: florescua/16-customer-demo-app
-     - tag the image : docker tag 14-thymeleaf-kube florescua/16-customer-demo-app:0.1
-     - push the image: docker push florescua/16-customer-demo-app:0.1  
+     - login : 
+       - docker login
+     - create a new repo on docker hub: 
+       - florescua/16-customer-demo-app
+     - tag the image : 
+       - docker tag 14-thymeleaf-kube florescua/16-customer-demo-app:0.1
+     - push the image: 
+       - docker push florescua/16-customer-demo-app:0.1  
      
  3. Pull back the image from docker hub and run the app   
      - docker-compose -f 16customer-demo-app.yaml up 
