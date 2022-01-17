@@ -22,7 +22,7 @@ Steps:
      - create a new repo on docker hub: 
        - florescua/16-customer-demo-app
      - tag the image : 
-       - tag 16-customer-demo-app:0.1 florescua/16-customer-demo-app:0.1
+       - docker tag 16-customer-demo-app:0.1 florescua/16-customer-demo-app:0.1
      - push the image: 
        - docker push florescua/16-customer-demo-app:0.1  
      
