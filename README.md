@@ -12,7 +12,7 @@ After that, app is running and can be acces on http://localhost:8080/
 Steps:  
  1. Create app image  
        - in application.properties modify spring.datasource.url. Replace **localhost:3306** with **mysqlc1**, name of  mysql container.
-    - delete all target file and rebuild app (.jar file) before creating docker image: 
+    - delete all target file and rebuild app (.jar file) before creating docker image, see "Notes" below; 
     - add Dockerfile to source root of the app and in the console go to that root and run build command:   
         - docker build -t 16-customer-demo-app:0.1 .
         
